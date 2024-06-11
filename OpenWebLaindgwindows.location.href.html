@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script, function">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <script>
+            function konek1()
+            {
+                if(document.fpilihan.pilih.options[0].selected)
+                {
+                    window.location.href="https://ti.pnp.ac.id";
+                }
+                else if (document.fpilihan.pilih.options[1].selected)
+                {
+                    window.location.href="https://www.pnp.ac.id";
+                }
+                else if (document.fpilihan.pilih.options[2].selected)
+                {
+                    window.location.href="https://www.w3schools.com/";
+                }
+                return true;
+            }
+            function konek2()
+            {
+                var pilihint;
+                var pilihstr;
+                pilihint=document.fpilihan.pilih.selectedIndex;
+                pilihstr=document.fpilihan.pilih.options[pilihint].text;
+                document.fpilihan.pilihteks.value=" Go To "+pilihstr+"!";
+            }
+        </script>
+        <center>
+            <form name="fpilihan">
+                <b>MENU PILIHAN DENGAN TOMBOL</b>
+                <p>
+                    <select name="pilih" onchange="konek2()" multiple size="3">
+                    <option>Website Jurusan TI</option>
+                    <option>Website PNP</option>
+                    <option>Website w3school</option>
+                    </select>
+                </p>
+                <p><br>
+                    <input type="button" name="pilihteks" value="" size="40" maxlength="40">
+                </p>
+                <p>
+                    <input type="button" name="Gobutton" value="Goo!!" onclick="konek1()">
+                </p>
+            </form>
+        </center>
+    </body>
+</html>

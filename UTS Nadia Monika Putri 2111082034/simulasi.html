@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="LogoTekinfo.png" class="logo1">
+            </div>
+            <div class="sb-menu">
+                <h2 class="text-white">MENU</h2>
+                <hr>
+                <div class="menu">
+                    <a href="home.html" class="text-white">HOME</a> <br>
+                    <a href="profile.html" class="text-white">PROFILE</a> <br>
+                    <a href="simulasi.html" class="text-white">SIMULASI</a>
+                </div>
+            </div>
+        </div>
+        <div class="bl-wrapper">
+            <div class="header">
+                <div class="logout"><h2 class="fm text-white">Logout</h2></div>
+            </div>
+            <div class="content">
+                <h2>HITUNG GAJI</h2>
+                <form>
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <td><label>Gaji Pokok</label></td>
+                                <td>:</td>
+                                <td><input type="number" id="gajipokok"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Lama Bekerja</label></td>
+                                <td>:</td>
+                                <td><input type="number" id="lamakerja"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Jumlah Tanggungan</label></td>
+                                <td>:</td>
+                                <td><input type="number" id="tanggungan"></td>
+                            </tr>
+                            <tr class="right">
+                                <td colspan="3"><button type="button" onclick="hitung()">Hitung</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+                <br>
+                <table id="result"></table>
+            </div>
+            <div class="footer text-white">@2022 - Nadia Monika Putri</div>
+        </div>
+    </div>
+
+    <script>
+        function hitung() {
+            let gaji = parseInt(document.getElementById("gajipokok").value)
+            let lama = parseInt(document.getElementById("lamakerja").value)
+            let tanggungan = parseInt(document.getElementById("tanggungan").value)
+            let result = document.getElementById("result")
+
+            let tambahan, tunjangan, jumlah, total
+
+            tunjangan = gaji*.05*tanggungan
+            if (lama>20) {
+                tambahan = 2000000
+            } else if (lama>10) {
+                tambahan = 1500000
+            } else if (lama>5) {
+                tambahan = 1000000
+            } else {
+                tambahan = 0
+            }
+
+            jumlah = gaji+tambahan
+            total = jumlah+tunjangan
+
+            result.innerHTML = 
+            `
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td>: Rp${gaji},-</td>
+                </tr>
+                <tr>
+                    <td>Tanggungan</td>
+                    <td>: ${tanggungan} Orang</td>
+                </tr>
+                <tr>
+                    <td>Lama Bekerja</td>
+                    <td>: ${lama} Tahun</td>
+                </tr>
+                <tr>
+                    <td>Total Tunjangan</td>
+                    <td>: Rp${tunjangan},-</td>
+                </tr>
+                <tr>
+                    <td>Jumlah Gaji</td>
+                    <td>: Rp${jumlah},-</td>
+                </tr>
+                <tr>
+                    <td>Total Gaji</td>
+                    <td>: Rp${total},-</td>
+                </tr>
+            `
+        }
+    </script>
+</body>
+
+</html>

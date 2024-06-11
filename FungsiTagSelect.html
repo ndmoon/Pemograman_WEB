@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script, function">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <script language ="JavaScript">
+            function tekan()
+            {
+                var jurusanstr = (document.fform.Jurusan.value);
+                document.fform.Ojurusan.value = jurusanstr;
+            }
+        </script>
+        <form name="fform">
+            <h1> Penggunaan Tag Select</h1><hr>
+            <h3>Masukkan :</h3>
+            Jurusan Di PNP :
+            <select name="Jurusan" size="1">
+                <option value="">--Pilih Jurusan</option>
+                <option value="Teknologi Rekayasa Perangkat Lunak"> Teknologi Rekayasa Perangkat Lunak</option>
+                <option value="Manajemen Informartika"> Manajemen Informartika</option>
+                <option value="Teknik Komputer"> Teknik Komputer</option>
+                <option value="Teknik Mesin"> Teknik Mesin</option>
+                <option value="Teknik Elektro"> Teknik Elektro</option>
+                <option value="Teknik Sipil"> Teknik Sipil</option>
+                <option value="Administrasi Niaga"> Administrasi Niaga</option>
+                <option value="Akuntansi"> Akuntansi</option>
+                <option value="Bahasa Inggris"> Bahasa Inggris</option>
+            </select>
+            <p><input type="button" value="kirim" onclick="tekan()">
+            <input type="reset" value="ulang">
+            <h3>Output Jurusan :</h3>
+            <input type="text" name="Ojurusan" size="30">
+        </form>
+    </body>
+</html>

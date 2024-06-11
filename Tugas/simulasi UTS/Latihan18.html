@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Document</title>
+		<meta name="description" content="HTML, CSS, JS">
+        <meta name="author" content="Nadia Monika Putri">
+        <link rel="stylesheet" href="styleLatihan.css">
+        <script src="javascriptLatihan.js"></script>
+    </head>
+	<body>
+        <div class="wrapper" >
+            <div class="header">
+                <h1>SELAMAT DATANG</h1>
+            </div>
+            <div class="body">
+                <div class="sidebar">
+                    <div class="padding">
+                    <br>
+                        <ul>
+                            <li><a href=""><u>MENU</u></a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="padding">
+                        <h2 class="hls">Hitung Luas Segitiga</h2>
+                            <form action="" name="frm">
+                                <table>
+                                <tr>
+                                    <td>Alas</td>
+                                    <td>: <input type="text" name="v_alas"></td>
+                                </tr>
+                                <tr>
+                                    <td>Tinggi</td>
+                                    <td>: <input type="text" name="v_tinggi"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" value="Hitung" name="button" onclick="document.frm.hitungluas.value=hitungluas(frm.v_alas.value, frm.v_tinggi.value)"></td>
+                                </tr>
+                                </table>
+                            </form>
+                        <div class="table">   
+                            <table border="1" class="hitung">
+                                <tr>
+                                    <td><b>Alas</b></td>
+                                    <td><b>Tinggi</b></td>
+                                    <td><b>Luas SegiTiga</b></td>
+                                </tr>
+                                <tr>
+                                    <td id="alas">-</td>
+                                    <td id="tinggi">-</td>
+                                    <td id="luas">-</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <div class="footer">
+                <p>Copyright@2909 - Nadia Monika Putri</p>
+            </div>
+        </div>
+	</body>
+</html>

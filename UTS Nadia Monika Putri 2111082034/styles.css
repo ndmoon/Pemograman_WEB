@@ -1,0 +1,193 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-white {
+    color: white;
+}
+.text-normal {
+    font-weight: normal;
+}
+
+.center {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.fm {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+    height: 95vh;
+    width: 100%;
+}
+
+.bl-wrapper {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sidebar {
+    display: block;
+    width: 15%;
+}
+
+.logo {
+    display: flex;
+    height: 20%;
+    background-color: #90AFC5;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.logo1 {
+    width: 100px;
+    height: auto;
+}
+
+.sb-menu {
+    height: 80%;
+    background-color: #2a3132;
+}
+
+.menu {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: crimson;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    background-color: #336B87;
+    text-align: right;
+    justify-content: right;
+}
+
+.logout {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.content {
+    display: block;
+    height: 95%;
+    background-color: #F0F8FF;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+b {
+    color: #0070C0;
+}
+
+i {
+    color: #FFC000;
+}
+h1 {
+    padding: 10px;
+    text-align: left;
+}
+p {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.footer {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    background-color: #336B87;
+    font-weight: bold;
+}
+
+h2 {
+    padding-top: 30px;
+}
+
+h3 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: medium;
+    padding: 30px;
+}
+
+.profile {
+    width: 200px;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+.about {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    width: 70%;
+    height: 30%;
+    background-color: #336B87;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+form {
+    display: inline-block;
+    width: 50%;
+    margin: 30px;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+table {
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    width: fit-content;
+}
+
+.right {
+    text-align: right;
+}

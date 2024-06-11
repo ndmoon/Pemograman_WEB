@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script, function">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <script>
+           function perulangan(nilai){
+            for (var i=0;i<=nilai;i++){
+                document.write("Perulangan ke "+i+" - "+j+"<br>");
+            }
+           }
+        </script>
+        <form name="frm">
+            <input type="text" name="nilai">
+            <input type="button" onclick="perulangan(frm.nilai.value)" value="Cek">
+        </form>
+        <p id="tampil"></p>
+    </body>
+</html>

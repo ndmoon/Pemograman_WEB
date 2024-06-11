@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript">
+            for (var i=0;i<5;i++){
+                document.write("Perulangan ke- "+i+"<br>");
+            }
+        </script><br><br><br>
+        <script>
+            var i=1;
+            while(i<=5){
+                document.write("Pengulangan ke- "+i+"<br>");
+                i++;
+            }
+        </script><br><br><br>
+        <script>
+            var i=0;
+            do{
+                document.write("Perulangan ke- "+i+"<br>");
+                i++;
+            }while(i<5)
+        </script><br><br><br>
+        <script>
+            var kendaraan=["Mobil","Motor","Sepeda"]
+            var no=0;
+            for(i in kendaraan){
+                no++;
+                document.write(kendaraan[i]+"<br>");
+            }
+        </script><br><br><br>
+        <script>
+            var hari=["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"]
+            hari.forEach(function(day) {
+                document.write("<p>"+day+"</p>");
+            });
+        </script><br><br><br>
+        <script>
+            document.write("Belajar Java Script <br>".repeat(10));
+        </script><br><br><br>
+        <script>
+            for(var i=0;i<5;i++){
+                for(var j=0;j<5;j++){
+                    document.write(i+"-"+j+"<br>");
+                }
+            }
+        </script>
+    </body>
+</html>

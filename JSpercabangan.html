@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <script>
+            var gol=prompt("Masukkan golongan");
+            var gaji;
+            if(gol=="IIIA")
+            gaji="Rp. 3.000.000";
+            else if (gol=="IIIB")
+            gaji="Rp. 3.100.000";
+            else if(gol=="IIIC")
+            gaji="Rp. 3.500.000";
+            else
+            gaji="0";
+            document.write("Golongan "+gol+" dan gaji sebesar "+gaji+"-");
+        </script><br><br>
+        <script>
+            var gol=prompt("Masukkan golongan");
+            var gaji;
+            switch(gol){
+                case "IIIA" :
+                    gaji="Rp. 3.000.000"
+                break;
+                case "IIIB" :
+                    gaji="Rp. 3.100.000"
+                break;
+                case "IIIC" :
+                    gaji="Rp. 3.500.000"
+                break;
+                default : gaji="0"
+                break;
+            }
+        </script>
+    </body>
+</html>

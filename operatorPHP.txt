@@ -1,0 +1,52 @@
+Operator Perbandingan
+---------------------
+<,>,<=,>=,!=,==,===
+---------------------
+= : Assigment
+
+switch(kondisi) {
+	case 'value1' :
+		statement;
+		break
+	case 'value2' :
+		statement;
+		break
+	default 'value' :
+		break
+}
+---------------------
+NA>=80 maka NH="A"
+NA>=70 maka NH="B"
+NA>=50 maka NH="C"
+NA>=30 maka NH="D"
+NA>=0 maka NH="E"
+---------------------
+Operator Logis
+--------------
+AND		&&
+OR		||
+NOT/NEGASI	!
+---------------------
+username=admin
+password=12345
+---------------------
+Looping
+--------
+- for
+	for (inisial;kondisi;inc/dec) {
+		statement;
+	}
+
+- while
+	inisialisasi;
+	while(kondisi) {
+		statement;
+		inc/dec;
+	}
+- do while
+	inisialisasi;
+	do {
+		statement;
+		inc/dec;
+	}
+	while(kondisi);

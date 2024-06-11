@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script, function">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <script>
+           function kali(){
+            var a=document.form1.nilai1.value;
+            var b=document.form1.nilai2.value;
+            c=a*b;
+            document.getElementById("hasil").innerHTML="Hasil : "+c;
+           }
+           function tambah(a,b){
+            c=parseInt(a)+parseInt(b);
+            document.getElementById("hasil").innerHTML="Hasil : "+c;
+           }
+           function kurang(a,b){
+            c=a-b;
+            document.getElementById("hasil").innerHTML="Hasil : "+c;
+           }
+        </script>
+        <form name="form1">
+            <input type="text" name="nilai1"><br>
+            <input type="text" name="nilai2"><br>
+            <input type="button" value="Kali" onclick=kali()>
+            <input type="button" value="Tambah" onclick=tambah(form1.nilai1.value,form1.nilai2.value)>
+            <input type="button" value="Kurang" onclick=kurang(form1.nilai1.value,form1.nilai2.value)>
+            <p id ="hasil"></p>
+        </form>
+    </body>
+</html>

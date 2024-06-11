@@ -1,0 +1,6 @@
+html mendukung format :
+apng --> .apng 
+gif --> .gif
+jpeg --> .jpg, .jpeg, .jfif, .pjpeg, .pjp
+png --> .png, .svg
+webp --> .webp

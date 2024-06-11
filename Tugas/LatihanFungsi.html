@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta name="keyword" content="html, java script, function">
+        <meta name="authors" content="Nadia Monika Putri">
+        <title>Java Script</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td>
+                    <form>
+                        <label for="nama">Nama&emsp;&emsp;&emsp;:</label>
+                        <input type="text" id="nama" name="nama" /> <br />
+                        <label for="tujuan">Tujuan&emsp;&emsp;&thinsp;&thinsp;&thinsp;:</label>
+                        <select id="tujuan" name="tujuan">
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Solo">Solo</option>
+                            <option value="Surabaya">Surabaya</option>
+                        </select><br />
+                        <label for="kelas">Kelas&emsp;&emsp;&emsp;&thinsp;:</label>
+                        <select id="kelas" name="kelas">
+                            <option value="Eksekutif">Eksekutif</option>
+                            <option value="Bisnis">Bisnis</option>
+                            <option value="Ekonomi">Ekonomi</option>
+                        </select><br />
+                        <label for="jumlah">Jumlah Tiket :</label>
+                        <input type="number" id="jumlah" name="jumlah" /> <br />
+                        <label for="member">Member&emsp;&ensp;&nbsp;&nbsp;:</label>
+                        <input type="checkbox" id="member" name="member" value="Ya" />
+                        <label>Ya</label>
+                    </form>
+                </td>
+                <td>
+                    <label for="harga">Harga Tiket&nbsp;: </label>
+                    <input type="number" id="harga" name="harga" value="" readonly /><br />
+                    <label for="subtotal">Sub Total&emsp;&thinsp;: </label>
+                    <input type="number" id="subtotal" name="subtotal" value="" readonly /><br />
+                    <label for="diskon">Diskon&emsp;&emsp;&thinsp;: </label>
+                    <input type="number" id="diskon" name="diskon" value="" readonly /><br />
+                    <label for="total">Total Bayar&thinsp;&thinsp;: </label>
+                    <input type="number" id="total" name="total" value="" readonly />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button" onclick="hitung()">Hitung</button>
+                    <button type="button" onclick="ulang()">Ulang</button>
+                </td>
+            </tr>
+        </table>
+    
+        <script>
+            let nama = document.getElementById("name")
+            let tujuan = document.getElementById("tujuan")
+            let kelas = document.getElementById("kelas")
+            let jumlah = document.getElementById("jumlah")
+            let member = document.getElementById("member")
+            let harga = document.getElementById("harga")
+            let subtotal = document.getElementById("subtotal")
+            let diskon = document.getElementById("diskon")
+            let total = document.getElementById("total")
+            function hitung() {
+            if (kelas.value == "SuperDuperEksekutif") {
+                if (tujuan.value == "Jakarta")
+                    harga.value = 100000
+                else if (tujuan.value == "Solo")
+                    harga.value = 150000
+                else if (tujuan.value == "Surabaya")
+                    harga.value = 200000
+            } else if (kelas.value == "Eksekutif") {
+                if (tujuan.value == "Jakarta")
+                    harga.value = 75000
+                else if (tujuan.value == "Solo")
+                    harga.value = 125000
+                else if (tujuan.value == "Surabaya")
+                    harga.value = 175000
+            } else if (kelas.value == "Bisnis") {
+                if (tujuan.value == "Jakarta")
+                    harga.value = 65000
+                else if (tujuan.value == "Solo")
+                    harga.value = 100000
+                else if (tujuan.value == "Surabaya")
+                    harga.value = 125000
+            } else if (kelas.value == "Ekonomi") {
+                if (tujuan.value == "Jakarta")
+                    harga.value = 50000
+                else if (tujuan.value == "Solo")
+                    harga.value = 75000
+                else if (tujuan.value == "Surabaya")
+                    harga.value = 100000
+            }
+            subtotal.value = harga.value * jumlah.value
+            if (member.checked)
+                diskon.value = subtotal.value * .1
+            else
+                diskon.value = 0
+            total.value = subtotal.value - diskon.value
+        }
+
+        function ulang() {
+            location.reload()
+            
+        }
+    </script>
+    </body>
+</html>
